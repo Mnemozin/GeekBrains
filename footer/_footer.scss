@@ -1,0 +1,219 @@
+@use 'variables' as v;
+.footer {
+  &-top {
+    background-image: url('../img/footer_bkgr.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    &_container {
+      display: flex;
+      min-height: 438px;
+    }
+    &__left,
+    &__right {
+      flex: 1 1 0px;
+    }
+    &__left {
+      display: flex;
+      border-right: solid 1px white;
+      padding-top: 111px;
+      &_text {
+        width: 390px;
+        margin-top: 6px;
+        margin-left: 28px;
+      }
+      &_text_p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+        font-style: italic;
+        letter-spacing: $spacing;
+        color: $black;
+      }
+      &_text_heading {
+        margin-top: 19px;
+        &_1 {
+          font-size: 16px;
+          font-weight: 700;
+          color: $pink;
+        }
+        &_2 {
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: 300;
+          color: $black;
+        }
+      }
+      &_text_buttons {
+        display: flex;
+        margin-top: 40px;
+      }
+      &_button {
+        $width: 38px;
+        $height: 4px;
+        width: $width;
+        height: $height;
+        border: none;
+        background-color: #d6d6d6;
+        cursor: pointer;
+        position: relative;
+        &:not(:last-of-type) {
+          margin-right: 13px;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: -4px;
+          left: -2px;
+          width: $width + 4px;
+          height: $height + 8px;
+        }
+        &:hover {
+          background-color: $pink;
+          transition: 0.15s;
+        }
+      }
+    }
+    &__right {
+      margin: 0 auto;
+      &_heading {
+        margin-top: 148px;
+        white-space: nowrap;
+        text-align: center;
+        color: $black;
+        &-1 {
+          font-size: 24px;
+          letter-spacing: 0.6px;
+        }
+        &-2 {
+          font-size: 14px;
+          letter-spacing: $spacing;
+          line-height: 1.71;
+        }
+      }
+      &_subscribe {
+        $radius: 30px;
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        &-input {
+          padding-left: 28px;
+          width: 254px;
+          border: none;
+          background-color: #e1e1e1;
+          opacity: 0.67;
+          font-size: 14px;
+          letter-spacing: $spacing;
+          text-align: center;
+          border-top-left-radius: $radius;
+          border-bottom-left-radius: $radius;
+          text-align: left;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: rgba(34, 34, 36, 0.67);
+          }
+        }
+        &-submit {
+          padding: 18px 20px;
+          font-size: 14px;
+          letter-spacing: $spacing;
+          border: none;
+          color: white;
+          background-color: $pink;
+          border-top-right-radius: $radius;
+          border-bottom-right-radius: $radius;
+        }
+        &-submit:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &-bot {
+    display: flex;
+    height: 458px;
+    &__left {
+      &_text {
+        margin-top: 29px;
+        width: 430px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.71;
+        letter-spacing: $spacing;
+        color: #898989;
+      }
+    }
+    &__right {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 63px;
+      &_column {
+        margin-top: 120px;
+        &:not(:last-of-type) {
+          margin-right: 129px;
+        }
+      }
+      &_heading {
+        white-space: nowrap;
+        font-size: 18px;
+        letter-spacing: 0.45px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: $pink;
+        text-transform: uppercase;
+      }
+      &_list {
+        list-style-type: none;
+      }
+      &_link {
+        display: block;
+        white-space: nowrap;
+        font-size: 16px;
+        line-height: 2.63;
+        letter-spacing: 0.4px;
+        color: #898989;
+      }
+    }
+  }
+  &-logo {
+    margin-top: 109px;
+  }
+  &-copy {
+    height: 79px;
+    background-color: #e6e6e6;
+    &-flex {
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &_copyright {
+      font-size: 16px;
+      letter-spacing: 0.4px;
+      color: #7a7a7a;
+    }
+    &__media {
+      display: flex;
+    }
+    &__media_icon {
+      width: 32px;
+      line-height: 32px;
+      text-align: center;
+      color: #b2b2b2;
+      background-color: white;
+      &:hover {
+        color: white;
+        background-color: $pink;
+        transition: 0.2s;
+      }
+      &:not(:last-of-type) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.fa-long-arrow-alt-right {
+  margin-left: 9px;
+}

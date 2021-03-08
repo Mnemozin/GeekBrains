@@ -1,0 +1,20 @@
+@use 'variables' as v;
+.top-triangle {
+  &::before {
+    content: '';
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 27px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-top: $border;
+    border-left: $border;
+    border-radius: 2px;
+  }
+}

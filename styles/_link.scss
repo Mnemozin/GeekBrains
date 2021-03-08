@@ -1,0 +1,8 @@
+@use 'variables' as v;
+.link {
+  text-decoration: none;
+  &:hover {
+    color: $pink;
+    border-color: $pink;
+  }
+}
