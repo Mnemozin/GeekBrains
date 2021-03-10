@@ -63,10 +63,14 @@ body {
   margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
-
+  &__img {
+    display: block;
+  }
   &__item {
+    display: block;
     margin-bottom: 20px;
     position: relative;
+    transition: all 0.5s;
     &_heading {
       box-sizing: border-box;
       padding: 9px 16px 12px 19px;
@@ -74,6 +78,17 @@ body {
       min-height: 82px;
       background-color: white;
       top: 26px;
+      transition: inherit;
+    }
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: $pink 0 0 15px;
+    }
+    &:hover &_heading {
+      background-color: $pink;
+      &-pink {
+        color: white;
+      }
     }
   }
   &__item_heading-black {
@@ -111,6 +126,8 @@ body {
     color: #9f9f9f;
   }
   &__button {
+    border: 1px solid $pink;
+    text-decoration: none;
     white-space: nowrap;
     background-color: $pink;
     align-self: center;
@@ -127,19 +144,25 @@ body {
   justify-content: space-between;
   &_item {
     box-sizing: border-box;
+    text-decoration: none;
     padding-bottom: 21px;
     margin-bottom: 39px;
+    transition: all 0.3s;
     &-img {
       display: block;
+      transition: inherit;
     }
     &-bkgr {
+      transition: inherit;
       position: relative;
       background-color: $black;
     }
     &-button {
+      transition: inherit;
       width: 123px;
       height: 39px;
       position: absolute;
+      z-index: 1;
       top: 94px;
       left: 70px;
       padding-left: 43px;
@@ -175,18 +198,16 @@ body {
 }
 .product__catalog_item:hover {
   box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
-  transition: 0.3s;
 }
 .product__catalog_item:hover .product__catalog_item-button {
   display: inline-block;
-  transition: 0.3s;
 }
 .product__catalog_item:hover .product__catalog_item-img {
   opacity: 0.25;
-  transition: 0.3s;
 }
 .product__catalog_item-button:hover {
   cursor: pointer;
+  box-shadow: 0 0 10px #9ecaed;
 }
 .offer {
   display: flex;
