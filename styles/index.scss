@@ -3,23 +3,12 @@
 @import 'link';
 @import 'animation';
 @import '../header/header';
+@import '../product__item/product__item';
 @import '../footer/footer';
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
-h1,
-h2,
-h3,
-h6,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: Lato;
-}
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
+@import 'base-style';
+
+.breadcrumbs{
+  display: none;
 }
 .main {
   height: 613px;
@@ -136,78 +125,13 @@ body {
     font-weight: 700;
     letter-spacing: $spacing;
     color: #ffffff;
+    transition: all 0.3s;
   }
 }
 .product__catalog {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  &_item {
-    box-sizing: border-box;
-    text-decoration: none;
-    padding-bottom: 21px;
-    margin-bottom: 39px;
-    transition: all 0.3s;
-    &-img {
-      display: block;
-      transition: inherit;
-    }
-    &-bkgr {
-      transition: inherit;
-      position: relative;
-      background-color: $black;
-    }
-    &-button {
-      transition: inherit;
-      width: 123px;
-      height: 39px;
-      position: absolute;
-      z-index: 1;
-      top: 94px;
-      left: 70px;
-      padding-left: 43px;
-      white-space: nowrap;
-      font-size: 13px;
-      color: white;
-      background-color: transparent;
-      background-image: url(../img/cart_white.png);
-      background-repeat: no-repeat;
-      background-size: 22px;
-      background-position: 12px center;
-      border: solid 1px #ffffff;
-      border-radius: 2px;
-      display: none;
-    }
-    &-name {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 400;
-      margin-bottom: 17px;
-      color: $black;
-    }
-    &-price {
-      font-size: 16px;
-      font-weight: 700;
-      color: $pink;
-    }
-    &-heading {
-      margin-top: 19px;
-      margin-left: 15px;
-    }
-  }
-}
-.product__catalog_item:hover {
-  box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
-}
-.product__catalog_item:hover .product__catalog_item-button {
-  display: inline-block;
-}
-.product__catalog_item:hover .product__catalog_item-img {
-  opacity: 0.25;
-}
-.product__catalog_item-button:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px #9ecaed;
 }
 .offer {
   display: flex;

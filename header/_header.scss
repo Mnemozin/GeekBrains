@@ -1,19 +1,19 @@
 @import '../search/search';
 @import '../logo/logo';
+@import '../styles/top-triangle';
 .header {
-  height: 149px;
   background-color: #ffffff;
   &-wrapper {
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
   }
   &-flex {
+    height: 100px;
     display: flex;
     justify-content: space-between;
   }
   &-left,
   &-right {
-    height: 100px;
     display: flex;
   }
   &-right {
@@ -154,28 +154,37 @@
 }
 .navigation {
   display: flex;
+  flex-direction: column;
   background-color: white;
-  height: 49px;
-  justify-content: center;
-  align-items: center;
 }
 .menu {
+  height: 49px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   &-list {
+    height: 100%;
     list-style: none;
     position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
   }
   &-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 100%;
     white-space: nowrap;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
     color: $black;
-    padding: 8px 23px;
-    margin: auto;
+    padding: 0 23px;
   }
+}
+.menu-list_active{
+  border-bottom: solid 3px #ef5b70;;
 }
 .menu-list:hover .mega-box {
   display: flex;
@@ -196,7 +205,7 @@
     z-index: 3;
     display: none;
     position: absolute;
-    top: 32px;
+    top: 37px;
     margin: auto;
     padding: 21px 21px 19px 25px;
     background-color: white;
@@ -220,4 +229,32 @@
     letter-spacing: $spacing;
     color: #646464;
   }
+}
+.breadcrumbs {
+  height: 148px;
+  background-color: #f8f3f4;
+  &__heading {
+    font-size: 24px;
+    font-weight: 900;
+    color: $pink;
+  }
+  & > .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__chain {
+    font-size: 14px;
+  }
+  &__link {
+    color: #636363;
+    &:hover {
+      background-color: #f8f3f4;
+    }
+  }
+}
+.breadcrumbs__link_active {
+  font-weight: 700;
+  color: $pink;
 }
