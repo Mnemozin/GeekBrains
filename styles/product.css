@@ -694,7 +694,7 @@
   background-position: bottom;
 }
 
-.footer-top_container {
+.footer-top__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
