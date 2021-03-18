@@ -1,0 +1,12 @@
+.button{
+  background-color: white;    
+    border: $border;//in _variables.scss
+    color: #4a4a4a;
+    transition: all 0.15s;
+    &:hover{
+      cursor: pointer;
+      background-color: white;
+      color: $pink;//in _variables.scss
+      border-color: $pink;//in _variables.scss
+    }
+}

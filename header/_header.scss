@@ -1,6 +1,7 @@
 @import '../search/search';
 @import '../logo/logo';
 @import '../styles/top-triangle';
+@import '../styles/button';
 .header {
   background-color: #ffffff;
   &-wrapper {
@@ -18,6 +19,7 @@
   }
   &-right {
     align-items: center;
+    justify-content: right;
   }
 }
 .header-logo {
@@ -54,7 +56,6 @@
   font-size: 15px;
   letter-spacing: 0.38px;
   text-decoration: none;
-  margin: auto 60px auto 0;
   &>.fa-caret-down{
     color: white;
     font-size: 14px;
@@ -120,16 +121,15 @@
     margin-bottom: 32px;
     font-size: 16px;
     font-weight: 700;
-    color: #222222;
+    color: $black;    
   }
   &_link {
-    display: block;
+    white-space: nowrap;
     text-align: center;
-    border: $border;
+    display: block;
     font-size: 14px;
     font-weight: 700;
-    color: #4a4a4a;
-    padding: 19px 74px;
+    padding: 19px 0;
     &:not(:last-of-type) {
       margin-bottom: 11px;
     }
