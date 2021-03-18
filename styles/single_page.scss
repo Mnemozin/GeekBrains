@@ -2,6 +2,7 @@
 @import 'top-triangle';
 @import 'link';
 @import 'animation';
+@import 'input-number';
 @import '../header/header';
 @import '../product__item/product__item';
 @import '../footer/footer';
@@ -129,18 +130,7 @@
   &__select {
     cursor: pointer;
   }
-  &__number {
-    box-sizing: border-box;
-    outline: none;
-    padding-top: 0;
-    padding-bottom: 0;
-    -moz-appearance: textfield;
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-  }
+
   &__submit {
     padding: 20px 0;
     margin-top: 28px;

@@ -895,6 +895,7 @@
 }
 
 .footer-bot__right {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,10 +907,6 @@
 
 .footer-bot__right_column {
   margin-top: 120px;
-}
-
-.footer-bot__right_column:not(:last-of-type) {
-  margin-right: 129px;
 }
 
 .footer-bot__right_heading {
@@ -997,9 +994,14 @@ h2,
 h3,
 h6,
 ul,
+fieldset,
 p {
   margin: 0;
   padding: 0;
+}
+
+fieldset {
+  border: none;
 }
 
 body {
