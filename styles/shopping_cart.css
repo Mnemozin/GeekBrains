@@ -1031,6 +1031,15 @@ body {
   margin: 0 auto;
 }
 
+select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+
 select::-ms-expand {
   display: none;
 }
@@ -1159,5 +1168,125 @@ select::-ms-expand {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px 0 79px;
+}
+
+.form__heading {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.form__heading_margin_shipping {
+  margin-bottom: 22px;
+}
+
+.form__heading_margin_coupon {
+  margin-bottom: 26px;
+}
+
+.form__heading_pink {
+  color: #f16d7f;
+}
+
+.form__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+}
+
+.form__text_light {
+  font-size: 11px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.form__info {
+  width: 355px;
+}
+
+.form__field {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 300;
+  color: #222222;
+  border: solid 1px #e6e6e6;
+  padding: 16px 0 16px 18px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.form__field::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+
+.form__field:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.form__field::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.form__field::placeholder {
+  color: #b1b1b1;
+}
+
+.form__select {
+  color: #b1b1b1;
+}
+
+.form__button {
+  display: block;
+  padding: 10px 14px 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  margin-top: 25px;
+}
+
+.form__article {
+  margin-bottom: 24px;
+}
+
+.form__checkout {
+  width: 360px;
+  height: 214px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px 41px 42px 44px;
+  background-color: #f5f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.form__checkout_margin {
+  margin-left: 10px;
+}
+
+.form__checkout-heading {
+  margin-top: 14px;
+  padding-bottom: 22px;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.form__submit {
+  background-color: #f16d7f;
+  color: white;
+  text-align: center;
+  padding: 17px 0 18px;
 }
 /*# sourceMappingURL=shopping_cart.css.map */

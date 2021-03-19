@@ -1013,6 +1013,15 @@ body {
   margin: 0 auto;
 }
 
+select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+
 select::-ms-expand {
   display: none;
 }

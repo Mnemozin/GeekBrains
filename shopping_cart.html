@@ -573,9 +573,30 @@
         </div>
       </fieldset>
       <fieldset class="form">
-        <div class="form__address"></div>
-        <div class="form__coupon"></div>
-        <div class="form__checkout"></div>
+        <div class="form__info">
+          <span class="form__heading form__heading_margin_shipping">SHIPPING ADDRESS</span>
+          <select name="country" id="" class="form__select form__field">
+            <option value="Bangladesh">Bangladesh</option>
+          </select>
+          <input type="text" placeholder="State" class="form__field">
+          <input type="text" placeholder="Postcode/Zip" class="form__field">
+          <button class="button link form__button">GET A QUOTE</button>
+        </div>
+        <div class="form__info">
+          <article class="form__article">
+            <span class="form__heading form__heading_margin_coupon">COUPON DISCOUNT</span>
+            <span class="form__text">Enter your coupon code if you have one</span>
+          </article>
+          <input type="text" placeholder="Coupon" class="form__field">
+          <button class="button link form__button">APPLY COUPON</button>
+        </div>
+        <div class="form__checkout">
+          <span class="form__text form__text_light">SUB TOTAL <span class="form__checkout_margin">$900</span></span>
+          <span class="form__heading form__checkout-heading">GRAND TOTAL
+            <span class="form__checkout_margin form__heading_pink">$900</span>
+          </span>
+          <input type="submit" value="PROCEED TO CHECKOUT" class="button link form__submit">
+        </div>
       </fieldset>
     </form>
   </main>
