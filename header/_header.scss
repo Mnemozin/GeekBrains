@@ -26,7 +26,7 @@
   margin-top: 25px;
   margin-right: 37px;
 }
-.header-search{
+.header-search {
   display: flex;
   align-items: center;
 }
@@ -56,12 +56,12 @@
   font-size: 15px;
   letter-spacing: 0.38px;
   text-decoration: none;
-  &>.fa-caret-down{
+  & > .fa-caret-down {
     color: white;
     font-size: 14px;
   }
 }
-.my-acc:hover>.fa-caret-down{
+.my-acc:hover > .fa-caret-down {
   color: $pink;
 }
 .header-right__dropdown {
@@ -121,7 +121,7 @@
     margin-bottom: 32px;
     font-size: 16px;
     font-weight: 700;
-    color: $black;    
+    color: $black;
   }
   &_link {
     white-space: nowrap;
@@ -170,6 +170,10 @@
     box-sizing: border-box;
     border-top: solid 3px transparent;
     border-bottom: solid 3px transparent;
+    &::before {
+      top: 31px;
+      left: 43%;
+    }
   }
   &-link {
     display: flex;
@@ -183,8 +187,8 @@
     padding: 0 23px;
   }
 }
-.menu-list_active{
-  border-bottom: solid 3px #ef5b70;;
+.menu-list_active {
+  border-bottom: solid 3px #ef5b70;
 }
 .menu-list:hover .mega-box {
   display: flex;
