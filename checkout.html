@@ -469,7 +469,52 @@
   <main class="main container">
     <div class="checkout checkout_open">
       <span class="checkout__heading">01. SHIPPING ADDRESS</span>
-      .
+      <div class="checkout__container">
+        <div class="register">
+          <article class="register__article">
+            <span class="checkout__text">CHECK OUT AS GUEST OR REGISTER</span>
+            <span class="checkout__text checkout__text_light register__article_margin">Register with us for future
+              convinience</span>
+          </article>
+          <div class="register__radio">
+            <p><input type="radio" class="radio" id="guest" name="choice" value="guest">
+              <label for="guest" class="checkout__text radio_margin">CHECKOUT AS GUEST</label>
+            </p>
+            <p><input type="radio" class="radio" id="register" name="choice" value="register" checked>
+              <label for="register" class="checkout__text">REGISTER</label>
+            </p>
+          </div>
+          <article class="register__article">
+            <span class="checkout__text">REGISTER AND SAVE TIME</span>
+            <span class="checkout__text checkout__text_light register__article_margin">Register with us for future
+              convinience</span>
+          </article>
+
+          <span class="checkout__text checkout__text_light checkout__text_margin"><i
+              class="fa fa-angle-double-right"></i>
+            Fast and easy checkout
+          </span>
+          <span class="checkout__text checkout__text_light"><i class="fa fa-angle-double-right"></i>
+            Easy access to your order history and status
+          </span>
+          <a href="" class="register__button link button">CONTINUE</a>
+        </div>
+        <form action="" class="form">
+          <article class="register__article">
+            <span class="checkout__text">ALREADY REGISTERED?</span>
+            <span class="checkout__text checkout__text_light register__article_margin">Please log in below</span>
+          </article>
+          <span class="checkout__text">EMAIL ADDRESS <span class="form__required checkout__text_red">*</span></span>
+          <input type="email" class="form__input">
+          <span class="checkout__text">PASSWORD <span class="form__required checkout__text_red">*</span></span>
+          <input type="password" class="form__input">
+          <span class="checkout__text checkout__text_red">* Required Fileds</span>
+          <div class="form__end">
+            <input type="submit" class="form__submit button link" value="LOG IN">
+            <span class="checkout__text">Forgot Password?</span>
+          </div>
+        </form>
+      </div>
     </div>
     <div class="checkout">
       <span class="checkout__heading">02. BILLING INFORMATION</span>
