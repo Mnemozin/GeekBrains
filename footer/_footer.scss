@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    &_container {
+    &__container {
       display: flex;
       min-height: 438px;
     }
@@ -25,7 +25,7 @@
       &_text_p {
         font-size: 16px;
         line-height: 26px;
-        font-weight: 600;
+        font-weight: 400;
         font-style: italic;
         letter-spacing: $spacing;
         color: $black;
@@ -146,14 +146,12 @@
       }
     }
     &__right {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       margin-left: 63px;
       &_column {
-        margin-top: 120px;
-        &:not(:last-of-type) {
-          margin-right: 129px;
-        }
+        margin-top: 120px;        
       }
       &_heading {
         white-space: nowrap;
@@ -203,10 +201,10 @@
       text-align: center;
       color: #b2b2b2;
       background-color: white;
+      transition: 0.2s;
       &:hover {
         color: white;
-        background-color: $pink;
-        transition: 0.2s;
+        background-color: $pink;        
       }
       &:not(:last-of-type) {
         margin-right: 8px;

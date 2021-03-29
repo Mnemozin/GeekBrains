@@ -2,6 +2,7 @@
 @import 'top-triangle';
 @import 'link';
 @import 'animation';
+@import 'select';
 @import '../header/header';
 @import '../product__item/product__item';
 @import '../footer/footer';
@@ -149,12 +150,6 @@ $grey: #6f6e6e;
     padding: 9px 8px 9px 13px;
   }
   &__select {
-    background-color: transparent;
-    border: none;
-    padding: 0 1em 0 0;
-    margin: 0;
-    outline: none;
-    cursor: pointer;
     font-size: 14px;
     font-weight: 400;
     color: #6f6e6e;
@@ -213,17 +208,17 @@ $grey: #6f6e6e;
     justify-content: center;
     padding: 75px 27px 0;
   }
-  &__logo{
+  &__logo {
     width: 60px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    &_crown{
+    &_crown {
       padding-top: 5px;
     }
   }
-  &__text{
+  &__text {
     margin-top: 12px;
     text-align: center;
   }
@@ -232,13 +227,14 @@ $grey: #6f6e6e;
     letter-spacing: $spacing;
     color: white;
   }
-  &__heading{
+  &__heading {
     font-size: 20px;
     font-weight: 700;
   }
-  &__p{
+  &__p {
     margin-top: 14px;
     font-size: 14px;
     font-weight: 300;
   }
 }
+//oops

@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 @use 'variables' as v;
 .top-triangle::before {
   content: '';
   display: none;
   position: absolute;
   z-index: 4;
-  top: 31px;
-  left: 0;
-  right: 0;
-  margin: auto;
   width: 11px;
   height: 11px;
   background-color: white;
@@ -26,8 +22,6 @@
 
 .link:hover {
   color: #f16d7f;
-  background-color: white;
-  border-color: #f16d7f;
 }
 
 @-webkit-keyframes sweep {
@@ -73,7 +67,6 @@
 }
 
 .search__drop-down::before {
-  margin: 0;
   top: -7px;
   left: 68px;
 }
@@ -225,10 +218,6 @@
   display: none;
   position: absolute;
   z-index: 4;
-  top: 31px;
-  left: 0;
-  right: 0;
-  margin: auto;
   width: 11px;
   height: 11px;
   background-color: white;
@@ -236,6 +225,21 @@
           transform: rotate(45deg);
   border-top: solid 1px #e6e6e6;
   border-left: solid 1px #e6e6e6;
+}
+
+.button {
+  background-color: white;
+  border: solid 1px #e6e6e6;
+  color: #4a4a4a;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #f16d7f;
+  border-color: #f16d7f;
 }
 
 .header {
@@ -268,6 +272,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .header-logo {
@@ -315,7 +322,6 @@
   font-size: 15px;
   letter-spacing: 0.38px;
   text-decoration: none;
-  margin: auto 60px auto 0;
 }
 
 .my-acc > .fa-caret-down {
@@ -414,13 +420,12 @@
 }
 
 .header-right__dropdown_link {
-  display: block;
+  white-space: nowrap;
   text-align: center;
-  border: solid 1px #e6e6e6;
+  display: block;
   font-size: 14px;
   font-weight: 700;
-  color: #4a4a4a;
-  padding: 19px 74px;
+  padding: 19px 0;
 }
 
 .header-right__dropdown_link:not(:last-of-type) {
@@ -482,6 +487,11 @@
           box-sizing: border-box;
   border-top: solid 3px transparent;
   border-bottom: solid 3px transparent;
+}
+
+.menu-list::before {
+  top: 31px;
+  left: 43%;
 }
 
 .menu-link {
@@ -694,7 +704,7 @@
   background-position: bottom;
 }
 
-.footer-top_container {
+.footer-top__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,7 +734,7 @@
 .footer-top__left_text_p {
   font-size: 16px;
   line-height: 26px;
-  font-weight: 600;
+  font-weight: 400;
   font-style: italic;
   letter-spacing: 0.35px;
   color: #222222;
@@ -881,6 +891,7 @@
 }
 
 .footer-bot__right {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -892,10 +903,6 @@
 
 .footer-bot__right_column {
   margin-top: 120px;
-}
-
-.footer-bot__right_column:not(:last-of-type) {
-  margin-right: 129px;
 }
 
 .footer-bot__right_heading {
@@ -961,13 +968,13 @@
   text-align: center;
   color: #b2b2b2;
   background-color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .footer-copy__media_icon:hover {
   color: white;
   background-color: #f16d7f;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .footer-copy__media_icon:not(:last-of-type) {
@@ -983,9 +990,14 @@ h2,
 h3,
 h6,
 ul,
+fieldset,
 p {
   margin: 0;
   padding: 0;
+}
+
+fieldset {
+  border: none;
 }
 
 body {
@@ -995,6 +1007,15 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
 }
 
 select::-ms-expand {
@@ -1148,13 +1169,12 @@ select::-ms-expand {
 
 .product__button {
   border: 1px solid #f16d7f;
-  text-decoration: none;
   white-space: nowrap;
   background-color: #f16d7f;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 12px 19px 17px 24px;
+  padding: 12px 19px 14px 24px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.35px;
