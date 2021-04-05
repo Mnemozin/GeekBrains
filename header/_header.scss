@@ -191,7 +191,7 @@
   border-bottom: solid 3px #ef5b70;
 }
 .menu-list:hover .mega-box {
-  display: flex;
+  display: grid;
 }
 .menu-list:hover::before {
   display: flex;
@@ -206,6 +206,8 @@
     margin-bottom: 8px;
   }
   &-box {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 170px auto;
     z-index: 3;
     display: none;
     position: absolute;
@@ -215,6 +217,28 @@
     background-color: white;
     border: $border;
     border-radius: 5px;
+    .grid-child{
+      &__1{
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+      }
+      &__2{
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+      }
+      &__3{
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+      }
+      &__4{
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+      }
+      &__5{
+        grid-column: 3 / 3;
+        grid-row: 2 / 2;
+      }
+    }
   }
   &-flex {
     width: 235px;
@@ -232,6 +256,9 @@
     line-height: 28px;
     letter-spacing: $spacing;
     color: #646464;
+  }
+  &__img{
+    display: block;
   }
 }
 .breadcrumbs {

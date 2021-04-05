@@ -515,9 +515,8 @@
 }
 
 .menu-list:hover .mega-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
 }
 
 .menu-list:hover::before {
@@ -536,6 +535,10 @@
 }
 
 .mega-box {
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: 170px auto;
+      grid-template-rows: 170px auto;
   z-index: 3;
   display: none;
   position: absolute;
@@ -545,6 +548,42 @@
   background-color: white;
   border: solid 1px #e6e6e6;
   border-radius: 5px;
+}
+
+.mega-box .grid-child__1 {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.mega-box .grid-child__2 {
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+}
+
+.mega-box .grid-child__3 {
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+}
+
+.mega-box .grid-child__4 {
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+}
+
+.mega-box .grid-child__5 {
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
 }
 
 .mega-flex {
@@ -566,6 +605,10 @@
   line-height: 28px;
   letter-spacing: 0.35px;
   color: #646464;
+}
+
+.mega__img {
+  display: block;
 }
 
 .breadcrumbs {
@@ -998,6 +1041,12 @@ p {
 
 fieldset {
   border: none;
+}
+
+*,
+*:focus,
+*:hover {
+  outline: none;
 }
 
 body {

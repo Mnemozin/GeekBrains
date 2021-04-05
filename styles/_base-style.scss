@@ -12,8 +12,13 @@ p {
   margin: 0;
   padding: 0;
 }
-fieldset{
+fieldset {
   border: none;
+}
+*,
+*:focus,
+*:hover {
+  outline: none;
 }
 body {
   font-family: Lato;
@@ -33,5 +38,3 @@ select {
 select::-ms-expand {
   display: none;
 }
-
-
