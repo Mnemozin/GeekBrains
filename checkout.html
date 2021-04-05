@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/shopping_cart.css">
+  <link rel="stylesheet" href="styles/checkout.css">
   <script src="https://kit.fontawesome.com/3b83339c4a.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
@@ -20,7 +20,7 @@
             <img src="img/logo.png" alt="logo" class="logo__icon">
             <p class="logo__text">BRAN<span class="logo__text_red">D</span></p>
           </a>
-  
+
           <section class="search">
             <details class="search__details">
               <summary class="summary">Browse<i class="fas fa-caret-down" aria-hidden="true"></i>
@@ -65,7 +65,7 @@
             <input type="text" class="search__input" placeholder="Search for Item...">
             <button type="submit" class="search__submit"><i class="fas fa-search" aria-hidden="true"></i></button>
           </section>
-  
+
         </div>
         <div class="header-right">
           <input type="checkbox" value="value-1" id="checkbox-toggle">
@@ -466,139 +466,71 @@
       </div>
     </nav>
   </header>
-  <main class="container">
-    <form action="">
-      <fieldset class="shopping-cart">
-        <div class="shopping-cart-grid shopping-cart-grid_padding">
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__heading">PRODUCT DETAILS</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__heading">PRICE</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__heading">QUANTITY</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__heading">SHIPPING</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__heading">SUBTOTAL</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__heading">ACTION</span>
-          </div>
-        </div>
-        <div class="shopping-cart-grid">
-          <div class="shopping-cart-grid__item">
-            <img src="img/cart_mini_1.jpg" alt="">
-            <article class="shopping-cart__info">
-              <span class="shopping-cart__name">MANGO PEOPLE T-SHIRT</span>
-              <span class="shopping-cart__desc">Color: <span class="shopping-cart__desc_light">Red</span></span>
-              <span class="shopping-cart__desc">Size: <span class="shopping-cart__desc_light">XXL</span></span>
-
-            </article>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__text">$150</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <input type="number" value="1" min="1" max="99" class="shopping-cart__input-number input-number">
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__text">FREE</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__text">$300</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <button class="shopping-cart__delete button"><i class="fas fa-times-circle"></i></button>
-          </div>
-        </div>
-        <div class="shopping-cart-grid">
-          <div class="shopping-cart-grid__item">
-            <img src="img/cart_mini_2.jpg" alt="">
-            <article class="shopping-cart__info">
-              <span class="shopping-cart__name">MANGO PEOPLE T-SHIRT</span>
-              <span class="shopping-cart__desc">Color: <span class="shopping-cart__desc_light">Red</span></span>
-              <span class="shopping-cart__desc">Size: <span class="shopping-cart__desc_light">XXL</span></span>
-
-            </article>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__text">$150</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <input type="number" value="1" min="1" max="99" class="shopping-cart__input-number input-number">
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__text">FREE</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__text">$300</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <button class="shopping-cart__delete button"><i class="fas fa-times-circle"></i></button>
-          </div>
-        </div>
-        <div class="shopping-cart-grid">
-          <div class="shopping-cart-grid__item">
-            <img src="img/cart_mini_3.jpg" alt="">
-            <article class="shopping-cart__info">
-              <span class="shopping-cart__name">MANGO PEOPLE T-SHIRT</span>
-              <span class="shopping-cart__desc">Color: <span class="shopping-cart__desc_light">Red</span></span>
-              <span class="shopping-cart__desc">Size: <span class="shopping-cart__desc_light">XXL</span></span>
-
-            </article>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__text">$150</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <input type="number" value="1" min="1" max="99" class="shopping-cart__input-number input-number">
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__text">FREE</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <span class="shopping-cart__text">$300</span>
-          </div>
-          <div class="shopping-cart-grid__item">
-            <button class="shopping-cart__delete button"><i class="fas fa-times-circle"></i></button>
-          </div>
-        </div>
-        <div class="shopping-cart__controls">
-          <button class="shopping-cart__button button">CLEAR SHOPPING CART</button>
-          <a href="product.html" class="shopping-cart__button link button">CONTINUE SHOPPING</a>
-        </div>
-      </fieldset>
-      <fieldset class="form">
-        <div class="form__info">
-          <span class="form__heading form__heading_margin_shipping">SHIPPING ADDRESS</span>
-          <select name="country" id="" class="form__select form__field">
-            <option value="Bangladesh">Bangladesh</option>
-          </select>
-          <input type="text" placeholder="State" class="form__field">
-          <input type="text" placeholder="Postcode/Zip" class="form__field">
-          <button class="button link form__button">GET A QUOTE</button>
-        </div>
-        <div class="form__info">
-          <article class="form__article">
-            <span class="form__heading form__heading_margin_coupon">COUPON DISCOUNT</span>
-            <span class="form__text">Enter your coupon code if you have one</span>
+  <main class="main container">
+    <div class="checkout checkout_open">
+      <span class="checkout__heading">01. SHIPPING ADDRESS</span>
+      <div class="checkout__container">
+        <div class="register">
+          <article class="register__article">
+            <span class="checkout__text">CHECK OUT AS GUEST OR REGISTER</span>
+            <span class="checkout__text checkout__text_light register__article_margin">Register with us for future
+              convinience</span>
           </article>
-          <input type="text" placeholder="Coupon" class="form__field">
-          <button class="button link form__button">APPLY COUPON</button>
-        </div>
-        <div class="form__checkout">
-          <span class="form__text form__text_light">SUB TOTAL <span class="form__checkout_margin">$900</span></span>
-          <span class="form__heading form__checkout-heading">GRAND TOTAL
-            <span class="form__checkout_margin form__heading_pink">$900</span>
+          <div class="register__radio">
+            <p><input type="radio" class="radio" id="guest" name="choice" value="guest">
+              <label for="guest" class="checkout__text radio_margin">CHECKOUT AS GUEST</label>
+            </p>
+            <p><input type="radio" class="radio" id="register" name="choice" value="register" checked>
+              <label for="register" class="checkout__text">REGISTER</label>
+            </p>
+          </div>
+          <article class="register__article">
+            <span class="checkout__text">REGISTER AND SAVE TIME</span>
+            <span class="checkout__text checkout__text_light register__article_margin">Register with us for future
+              convinience</span>
+          </article>
+
+          <span class="checkout__text checkout__text_light checkout__text_margin"><i
+              class="fa fa-angle-double-right"></i>
+            Fast and easy checkout
           </span>
-          <input type="submit" value="PROCEED TO CHECKOUT" class="button link form__submit">
+          <span class="checkout__text checkout__text_light"><i class="fa fa-angle-double-right"></i>
+            Easy access to your order history and status
+          </span>
+          <a href="" class="register__button link button">CONTINUE</a>
         </div>
-      </fieldset>
-    </form>
+        <form action="" class="form">
+          <article class="register__article">
+            <span class="checkout__text">ALREADY REGISTERED?</span>
+            <span class="checkout__text checkout__text_light register__article_margin">Please log in below</span>
+          </article>
+          <span class="checkout__text">EMAIL ADDRESS <span class="form__required checkout__text_red">*</span></span>
+          <input type="email" class="form__input">
+          <span class="checkout__text">PASSWORD <span class="form__required checkout__text_red">*</span></span>
+          <input type="password" class="form__input">
+          <span class="checkout__text checkout__text_red">* Required Fileds</span>
+          <div class="form__end">
+            <input type="submit" class="form__submit button link" value="LOG IN">
+            <span class="checkout__text">Forgot Password?</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="checkout">
+      <span class="checkout__heading">02. BILLING INFORMATION</span>
+    </div>
+    <div class="checkout">
+      <span class="checkout__heading">03. SHIPPING INFORMATION</span>
+    </div>
+    <div class="checkout">
+      <span class="checkout__heading">04. SHIPPING METHOD</span>
+    </div>
+    <div class="checkout">
+      <span class="checkout__heading">05. SHIPPING ADDRESS</span>
+    </div>
+    <div class="checkout">
+      <span class="checkout__heading">06. SHIPPING ADDRESS</span>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer-top">

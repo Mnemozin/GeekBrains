@@ -21,7 +21,7 @@
 }
 
 .link:hover {
-  color: #f16d7f;
+  color: #f16d7f !important;
 }
 
 @-webkit-keyframes sweep {
